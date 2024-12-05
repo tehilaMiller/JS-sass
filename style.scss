@@ -1,0 +1,52 @@
+/*#כל הזכויות שמורות לתהילה#*/
+@mixin font($font) {
+  font-size: larger;
+  font-family: $font;
+  color: cadetblue;
+}
+body {
+  @include font("Arial");
+}
+li {
+  a {
+    color: grey;
+    text-decoration: none;
+  }
+  button {
+    border-radius: 15px;
+    background-color: rgb(33, 109, 139);
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+@each $name, $color,
+  $cursor
+    in(
+      (text-success, green, pointer),
+      (text-danger, red, pointer),
+      (text-info, blue, help),
+      (text-warning, black, default)
+    )
+{
+  .#{$name} {
+    color: $color;
+    background-color: lighten($color, $amount: 50);
+    cursor: $cursor;
+    background-color: aqua;
+    font-weight: bold;
+    @include font("Arial");
+  }
+}
+@for $i from 1 through 12 {
+  .column-#{$i} {
+    width: ($i/12) * 100%;
+    background-color: rgb($i * 100, $i * 15, $i * 10);
+  }
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); // 12 עמודות שוות-רוחב
+  grid-auto-rows: minmax(100px, auto); // גובה מינימלי לכל שורה
+}

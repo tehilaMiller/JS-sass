@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/*#כל הזכויות שמורות לתהילה#*/
+body {
+  font-size: larger;
+  font-family: "Arial";
+  color: cadetblue;
+}
+
+li a {
+  color: grey;
+  text-decoration: none;
+}
+li button {
+  border-radius: 15px;
+  background-color: rgb(33, 109, 139);
+}
+li button:hover {
+  opacity: 0.6;
+}
+
+.text-success {
+  color: green;
+  background-color: #80ff80;
+  cursor: pointer;
+  background-color: aqua;
+  font-weight: bold;
+  font-size: larger;
+  font-family: "Arial";
+  color: cadetblue;
+}
+
+.text-danger {
+  color: red;
+  background-color: white;
+  cursor: pointer;
+  background-color: aqua;
+  font-weight: bold;
+  font-size: larger;
+  font-family: "Arial";
+  color: cadetblue;
+}
+
+.text-info {
+  color: blue;
+  background-color: white;
+  cursor: help;
+  background-color: aqua;
+  font-weight: bold;
+  font-size: larger;
+  font-family: "Arial";
+  color: cadetblue;
+}
+
+.text-warning {
+  color: black;
+  background-color: gray;
+  cursor: default;
+  background-color: aqua;
+  font-weight: bold;
+  font-size: larger;
+  font-family: "Arial";
+  color: cadetblue;
+}
+
+.column-1 {
+  width: 8.3333333333%;
+  background-color: rgb(100, 15, 10);
+}
+
+.column-2 {
+  width: 16.6666666667%;
+  background-color: rgb(200, 30, 20);
+}
+
+.column-3 {
+  width: 25%;
+  background-color: rgb(255, 45, 30);
+}
+
+.column-4 {
+  width: 33.3333333333%;
+  background-color: rgb(255, 60, 40);
+}
+
+.column-5 {
+  width: 41.6666666667%;
+  background-color: rgb(255, 75, 50);
+}
+
+.column-6 {
+  width: 50%;
+  background-color: rgb(255, 90, 60);
+}
+
+.column-7 {
+  width: 58.3333333333%;
+  background-color: rgb(255, 105, 70);
+}
+
+.column-8 {
+  width: 66.6666666667%;
+  background-color: rgb(255, 120, 80);
+}
+
+.column-9 {
+  width: 75%;
+  background-color: rgb(255, 135, 90);
+}
+
+.column-10 {
+  width: 83.3333333333%;
+  background-color: rgb(255, 150, 100);
+}
+
+.column-11 {
+  width: 91.6666666667%;
+  background-color: rgb(255, 165, 110);
+}
+
+.column-12 {
+  width: 100%;
+  background-color: rgb(255, 180, 120);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}/*# sourceMappingURL=style.css.map */
